@@ -99,6 +99,13 @@ Count maximum recursion depth (stack height).
 ### Linear Recursion (Single Call)
 
 1. Define function meaning
+    What does my function return?
+    Example
+    ```text
+    factorial(n) → returns factorial of n
+    reverse(s) → returns reversed string
+    sum(n) → returns sum from 1 to n
+    ```
 2. Write base case
 3. Assume smaller problem solved
 4. Combine result
