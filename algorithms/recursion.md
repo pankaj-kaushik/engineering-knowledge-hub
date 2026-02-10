@@ -98,27 +98,68 @@ Count maximum recursion depth (stack height).
 
 ### Linear Recursion (Single Call)
 
-1. Define function meaning
-    What does my function return?
-    Example
-    ```text
-    factorial(n) → returns factorial of n
-    reverse(s) → returns reversed string
-    sum(n) → returns sum from 1 to n
-    ```
-2. Write base case
-3. Assume smaller problem solved
-4. Combine result
-5. Ensure size reduces
+#### Step 1 -  Define function meaning
+**What does my function return?**
+Example
+```text
+factorial(n) → returns factorial of n
+reverse(s) → returns reversed string
+sum(n) → returns sum from 1 to n
+```
+This is the **single most powerful step**.
+
+#### Step 2 -  Identify the Base Case
+Ask:
+**When does the problem become trivially solvable?**
+Example
+```text
+n == 0
+length == 1
+empty array
+```
+**Note - Without base case → infinite recursion.**
+
+#### Step 3 -  Assume Recursion Works for Smaller Problem
+Assume:
+```text
+myFunction(n-1) already works correctly
+```
+This is **called faith in recursion**
+
+#### Step 4 -  Use Smaller Answer to Build Bigger Answer
+Combine:
+```text
+result(n) = something + result(n-1)
+```
+Example
+```text
+fact(n) = n * fact(n-1)
+```
+#### Step 5 -  Ensure Progress Toward Base Case
+Each call must reduce:
+```text
+n → n-1
+string → smaller substring
+array → smaller size
+```
+Otherwise **infinite loop.**
+#### Step 6 -  Draw Recursion Tree (only if stuck)
+If logic is confusing, draw calls:
+```text
+fib(5)
+ ├── fib(4)
+ └── fib(3)
+```
+This clarifies **thinking** instantly.
 
 **Template:**
 
 ```python
-def solve(n):
+def solve(problem):
     if base_case:
         return answer
-    smaller = solve(n-1)
-    return combine(smaller)
+    smaller_answer = solve(smaller_problem)
+    return combine(smaller_answer)
 ```
 
 ### Binary / Multiple Recursion (Backtracking)
