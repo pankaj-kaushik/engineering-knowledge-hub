@@ -3,7 +3,6 @@
 *A career-focused beginner guide to understanding Generative AI in
 simple language.*
 
-------------------------------------------------------------------------
 
 ## 1. What is AI, Machine Learning, Deep Learning (Quick Foundation)
 
@@ -30,7 +29,6 @@ simple language.*
             ↓
     Large Language Models (LLMs)
 
-------------------------------------------------------------------------
 
 ## 2. What is a Large Language Model (LLM)?
 
@@ -42,7 +40,7 @@ of text so it can **understand and generate human-like language**.
 Think of an LLM as a **super-smart autocomplete brain** that has read
 millions of books.
 
-------------------------------------------------------------------------
+
 
 ## 3. How LLMs Work (High Level --- Non-Math)
 
@@ -51,7 +49,7 @@ patterns**.
 
 **Tokens:** Small pieces of text processed by the model.
 
-------------------------------------------------------------------------
+
 
 ## 4. Examples of Popular LLMs
 
@@ -60,7 +58,7 @@ patterns**.
 -   Gemini (Google)
 -   Llama (Meta)
 
-------------------------------------------------------------------------
+
 
 ## 5. Key Concepts Every Beginner Must Know
 
@@ -72,7 +70,7 @@ patterns**.
 -   Hallucination --- incorrect generated information
 -   Temperature --- controls randomness
 
-------------------------------------------------------------------------
+
 
 ## 6. Real-World Applications of LLMs
 
@@ -81,7 +79,6 @@ patterns**.
 -   Content generation
 -   Enterprise copilots
 
-------------------------------------------------------------------------
 
 ## 7. LLM Ecosystem
 
@@ -89,8 +86,6 @@ patterns**.
 -   Vector Databases
 -   RAG pipelines
 -   Frameworks (LangChain / LlamaIndex)
-
-------------------------------------------------------------------------
 
 ## 8. Skills Required to Start Career in GenAI
 
@@ -100,39 +95,10 @@ patterns**.
 -   RAG pipelines
 -   Basic ML understanding
 
-------------------------------------------------------------------------
 
-## 9. Beginner Learning Roadmap (30-60-90 Days)
+## 9. Simple Real-World Analogy
 
-**30 Days:** Python + API + chatbot\
-**60 Days:** Embeddings + Vector DB + RAG\
-**90 Days:** Build projects + deploy + GitHub portfolio
-
-------------------------------------------------------------------------
-
-## 10. Simple Real-World Analogy
-
-LLM = Writer\
-Vector DB = Library catalog\
-Embeddings = Indexing system\
+LLM = Writer
+Vector DB = Library catalog
+Embeddings = Indexing system
 RAG = Fetch books before writing
-
-------------------------------------------------------------------------
-
-## 11. Interview Quick Revision
-
--   LLMs trained on massive text
--   Tokens are unit of processing
--   Prompt = instruction
--   RAG improves factual accuracy
--   Vector DB stores embeddings
-
-------------------------------------------------------------------------
-
-## How to Start Your GenAI Career Today 🚀
-
-1.  Learn Python
-2.  Call an LLM API
-3.  Build chatbot
-4.  Add RAG
-5.  Publish on GitHub
