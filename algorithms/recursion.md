@@ -100,6 +100,7 @@ Count maximum recursion depth (stack height).
 
 #### Step 1 -  Define function meaning
 **What does my function return?**
+
 Example
 ```text
 factorial(n) → returns factorial of n
@@ -110,7 +111,9 @@ This is the **single most powerful step**.
 
 #### Step 2 -  Identify the Base Case
 Ask:
+
 **When does the problem become trivially solvable?**
+
 Example
 ```text
 n == 0
@@ -121,6 +124,7 @@ empty array
 
 #### Step 3 -  Assume Recursion Works for Smaller Problem
 Assume:
+
 ```text
 myFunction(n-1) already works correctly
 ```
@@ -133,10 +137,11 @@ result(n) = something + result(n-1)
 ```
 Example
 ```text
-fact(n) = n * fact(n-1)
+sum(n) = n  + sum(n-1)
 ```
 #### Step 5 -  Ensure Progress Toward Base Case
 Each call must reduce:
+
 ```text
 n → n-1
 string → smaller substring
@@ -145,10 +150,18 @@ array → smaller size
 Otherwise **infinite loop.**
 #### Step 6 -  Draw Recursion Tree (only if stuck)
 If logic is confusing, draw calls:
+
 ```text
-fib(5)
- ├── fib(4)
- └── fib(3)
+sum(4)
+   |
+sum(3)
+   |
+sum(2)
+   |
+sum(1)
+   |
+sum(0)
+
 ```
 This clarifies **thinking** instantly.
 
@@ -162,7 +175,81 @@ def solve(problem):
     return combine(smaller_answer)
 ```
 
-### Binary / Multiple Recursion (Backtracking)
+### Binary Recursion (Two Calls)
+
+#### Step 1 -  Define function meaning
+**What does my function return?**
+
+Example
+```text
+fib(n) returns nth fibonacci number
+```
+
+#### Step 2 -  Identify the Base Case
+Ask:
+
+**When does the problem become trivially solvable?**
+
+Example
+```text
+fib(0) = 0
+fib(1) = 0
+```
+**Note - Without base case → infinite recursion.**
+
+#### Step 3 -  Assume Recursion Works for Smaller Problem
+Assume:
+
+```text
+fib(n-1) gives correct value
+fib(n-2) gives correct value
+```
+This assumption is essential.
+
+#### Step 4 -  Use Smaller Answer to Build Bigger Answer
+Now combine multiple recursive answers:
+
+```text
+fib(n) = fib(n-1) + fib(n-2)
+```
+**This is the key difference from single-recursion problems.**
+
+#### Step 5 -  Ensure Progress Toward Base Case
+Each call must reduce:
+
+```text
+n → n-1
+n → n-2
+```
+
+#### Step 6 -  Draw Recursion Tree (When confused)
+If logic is confusing, draw calls:
+
+Example: fib(5)
+```text
+                fib(5)
+              /        \
+         fib(4)        fib(3)
+        /      \       /     \
+   fib(3)   fib(2) fib(2)  fib(1)
+   /    \
+fib(2) fib(1)
+```
+Tree Shows:
+- how many calls happen
+- why complexity becomes exponential
+- repeated calculations
+
+**Template:**
+
+```python
+def solve(problem):
+    if base_case:
+        return answer
+    smaller_answer = solve(smaller_problem_1) + solve(smaller_problem_2)
+    return combine(smaller_answer)
+```
+### Multiple Recursions (Backtracking)
 
 1. Identify choices
 2. Try a choice
@@ -194,6 +281,7 @@ def backtrack(path, choices):
         backtrack(path, new_choices)  # explore
         path.pop()                 # undo
 ```
+## How to Generate Recursion Tree
 
 ## Common Interview Questions (Google / Amazon)
 
