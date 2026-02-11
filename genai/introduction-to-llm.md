@@ -148,3 +148,24 @@ Used in:
 - **Sensitivity to prompts:** Small changes in phrasing can cause large output differences.
 - **Compute and cost:** Large models require significant computing resources and can be expensive to run.
 
+## 8. Simple GEN AI Learning Path
+```text
+LLM Basics
+   ↓
+Prompt Engineering
+   ↓
+LLM APIs
+   ↓
+Embeddings & Vector DB
+   ↓
+RAG Systems
+   ↓
+LLM Frameworks
+   ↓
+Agents
+   ↓
+Production Systems
+   ↓
+Advanced GenAI
+
+```
