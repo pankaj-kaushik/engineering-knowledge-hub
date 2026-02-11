@@ -1,4 +1,4 @@
-# 🤖 Introduction to Large Language Models (LLMs) --- Beginner Friendly Guide
+# Introduction to Large Language Models (LLMs) 
 
 *A career-focused beginner guide to understanding Generative AI in
 simple language.*
@@ -71,10 +71,10 @@ Training = Studying for years
 Inference = Answering exam questions
 ```
 **Key Steps Involved Behind the scene:**
-1. **Tokenization:**Break your text into smaller chunks or units(tokens).
-2. **Embedding:**: Converts tokens into numbers (vector).
-3. **Transformer:**Uses an **attention mechanism** to decide which word matter
-4. **Prediction**: Generate the next token (word/letter) based on training
+1. **Tokenization:** Break your text into smaller chunks or units(tokens).
+2. **Embedding:** Converts tokens into numbers (vector).
+3. **Transformer:** Uses an **attention mechanism** to decide which word matter
+4. **Prediction:** Generate the next token (word/letter) based on training
 
 ![LLM Architecture](../diagrams/llm_working.png)
 
