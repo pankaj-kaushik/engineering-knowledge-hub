@@ -29,7 +29,7 @@ simple language.*
             ↓
     Large Language Models (LLMs)
 
-![AI vs ML vs DL vs LLM](../diagrams/ai_ml_dl_llm.png)
+![AI vs ML vs DL vs LLM](../assets/diagrams/ai_ml_dl_llm.png)
 
 ## 2. What is a Large Language Model (LLM)?
 
@@ -76,7 +76,7 @@ Inference = Answering exam questions
 3. **Transformer:** Uses an **attention mechanism** to decide which word matter
 4. **Prediction:** Generate the next token (word/letter) based on training
 
-![LLM Architecture](../diagrams/llm_working.png)
+![LLM Architecture](../assets/diagrams/llm_working.png)
 
 **Mental Model**
 ```text
